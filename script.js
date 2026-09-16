@@ -38,7 +38,7 @@ const nota = document.getElementById('formNota');
  
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  nota.textContent = '¡Gracias! Tu mensaje fue registrado. (Conecta este formulario a un servicio de envío real).';
+  nota.textContent = '¡Gracias! Tu mensaje fue registrado.';
   form.reset();
 });
  
