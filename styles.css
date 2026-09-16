@@ -109,8 +109,14 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(253, 253, 251, 0.92);
-  backdrop-filter: blur(8px);
+  /* Logo en el fondo del banner: la imagen se ve casi al 100%, con solo un
+     lavado blanco muy leve (8% opacidad) para que el menú siga siendo legible.
+     Sube el 0.08 si el texto se pierde; bájalo si quieres que se note aún más el logo. */
+  background:
+    linear-gradient(rgba(253, 253, 251, 0.08), rgba(253, 253, 251, 0.08)),
+    url('images/logo.jpg');
+  background-size: cover;
+  background-position: center;
   border-bottom: 1px solid var(--line);
 }
  
