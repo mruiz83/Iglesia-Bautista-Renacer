@@ -30,15 +30,31 @@ const observer = new IntersectionObserver((entries) => {
 
 revealEls.forEach(el => observer.observe(el));
 
-// ===== Formulario de contacto =====
-// TODO: conectar con un servicio real de envío de correos (ej. Formspree, EmailJS, backend propio)
+// ===== Formulario de contacto / Envía a Formspree=====
+
 const form = document.getElementById('formContacto');
 const nota = document.getElementById('formNota');
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', async (e) => {
   e.preventDefault();
-  nota.textContent = '¡Gracias! Tu mensaje fue registrado. (Conecta este formulario a un servicio de envío real).';
-  form.reset();
+  nota.textContent = 'Enviando...';
+
+  try {
+    const respuesta = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (respuesta.ok) {
+      nota.textContent = '¡Gracias! Tu mensaje fue enviado, te responderemos pronto.';
+      form.reset();
+    } else {
+      nota.textContent = 'Hubo un problema al enviar. Intenta de nuevo o escríbenos directamente.';
+    }
+  } catch (error) {
+    nota.textContent = 'Hubo un problema de conexión. Intenta de nuevo.';
+  }
 });
 
 // ===== Año automático en el pie de página =====
