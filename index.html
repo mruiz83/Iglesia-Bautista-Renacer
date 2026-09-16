@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iglesia Bautista | Bienvenidos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ======================= BANNER / VENTANAS DE NAVEGACIÓN ======================= -->
+<header class="banner" id="banner">
+  <div class="banner__inner">
+    <a href="#inicio" class="banner__brand">
+      <span class="banner__brand-text">
+        <!-- TODO: reemplazar por el nombre real de la iglesia -->
+        Iglesia Bautista <em>Renacer</em>
+      </span>
+    </a>
+
+    <button class="banner__toggle" id="menuToggle" aria-expanded="false" aria-controls="ventanasNav" aria-label="Abrir menú">
+      <span class="banner__toggle-line"></span>
+      <span class="banner__toggle-line"></span>
+      <span class="banner__toggle-line"></span>
+    </button>
+
+    <nav class="ventanas" id="ventanasNav">
+      <a href="#inicio" class="ventana">Inicio</a>
+      <a href="#nosotros" class="ventana">Nosotros</a>
+      <a href="#ministerios" class="ventana">Ministerios</a>
+      <a href="#horarios" class="ventana">Horarios</a>
+      <a href="#contacto" class="ventana ventana--cta">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ======================= INICIO ======================= -->
+<section id="inicio" class="seccion hero">
+  <!-- TODO: reemplazar esta marca de agua por una foto real de la congregación/templo:
+       1) Agrega tu imagen en una carpeta "images/" junto a este HTML.
+       2) En styles.css, dentro de .hero__watermark, cambia el SVG de fondo por:
+          background-image: url('images/tu-foto.jpg');
+          background-size: cover; background-position: center;
+       3) Ajusta la opacidad en .hero__watermark si la foto se ve muy fuerte u opaca. -->
+  <div class="hero__watermark" aria-hidden="true"></div>
+  <div class="hero__content reveal">
+    <p class="eyebrow">Sean bienvenidos</p>
+    <h1>Un lugar para encontrar<br><em>fe, familia y esperanza</em></h1>
+    <p class="hero__sub">
+      <!-- TODO: reemplazar por el versículo o lema de la iglesia -->
+      "Venid a mí todos los que estáis trabajados y cargados, y yo os haré descansar." — Mateo 11:28
+    </p>
+    <div class="hero__cta">
+      <a href="#horarios" class="btn btn--primary">Ver horarios de servicios</a>
+      <a href="#contacto" class="btn btn--ghost">Cómo llegar</a>
+    </div>
+  </div>
+  <div class="divisor"><span>✚</span></div>
+</section>
+
+<!-- ======================= NOSOTROS ======================= -->
+<section id="nosotros" class="seccion nosotros">
+  <div class="contenedor nosotros__grid">
+    <div class="nosotros__texto reveal">
+      <p class="eyebrow">Nosotros</p>
+      <h2>Nuestra historia y lo que creemos</h2>
+      <p>
+        <!-- TODO: reemplazar por la historia real de la congregación -->
+        Somos una comunidad de fe bautista comprometida con el estudio de la Palabra,
+        la oración y el servicio al prójimo. Durante años hemos abierto nuestras puertas
+        a familias que buscan crecer espiritualmente y encontrar una comunidad genuina.
+      </p>
+      <div class="creencias">
+        <div class="creencia">
+          <h3>Misión</h3>
+          <p><!-- TODO: texto de misión --> Anunciar el evangelio y hacer discípulos en amor y verdad.</p>
+        </div>
+        <div class="creencia">
+          <h3>Visión</h3>
+          <p><!-- TODO: texto de visión --> Ser una familia de fe que transforma vidas y comunidades.</p>
+        </div>
+        <div class="creencia">
+          <h3>Valores</h3>
+          <p><!-- TODO: texto de valores --> La Biblia como guía, la oración constante y el servicio humilde.</p>
+        </div>
+      </div>
+    </div>
+    <div class="nosotros__imagen reveal">
+      <!-- TODO: reemplazar por una fotografía del templo o pastor -->
+      <div class="placeholder-img" data-label="Foto del templo / pastor"></div>
+    </div>
+  </div>
+</section>
+
+<div class="divisor"><span>✚</span></div>
+
+<!-- ======================= MINISTERIOS ======================= -->
+<section id="ministerios" class="seccion ministerios">
+  <div class="contenedor">
+    <p class="eyebrow eyebrow--centro">Ministerios</p>
+    <h2 class="titulo-centro">Espacios para cada etapa de la vida</h2>
+    <div class="ministerios__grid">
+      <!-- TODO: ajustar/añadir tarjetas de ministerios reales -->
+      <article class="ministerio-card reveal">
+        <span class="ministerio-card__num">01</span>
+        <h3>Niños</h3>
+        <p>Clases bíblicas y actividades para los más pequeños durante el servicio.</p>
+      </article>
+      <article class="ministerio-card reveal">
+        <span class="ministerio-card__num">02</span>
+        <h3>Jóvenes</h3>
+        <p>Encuentros semanales de comunión, música y estudio bíblico para jóvenes.</p>
+      </article>
+      <article class="ministerio-card reveal">
+        <span class="ministerio-card__num">03</span>
+        <h3>Matrimonios</h3>
+        <p>Talleres y consejería para fortalecer la vida en pareja y familia.</p>
+      </article>
+      <article class="ministerio-card reveal">
+        <span class="ministerio-card__num">04</span>
+        <h3>Alabanza</h3>
+        <p>Ministerio de música y adoración que acompaña cada servicio.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="divisor"><span>✚</span></div>
+
+<!-- ======================= HORARIOS ======================= -->
+<section id="horarios" class="seccion horarios">
+  <div class="contenedor">
+    <p class="eyebrow eyebrow--centro">Horarios</p>
+    <h2 class="titulo-centro">Servicios y reuniones</h2>
+    <div class="horarios__tabla reveal">
+      <!-- TODO: ajustar días/horas reales -->
+      <div class="horario-fila">
+        <span class="horario-dia">Domingo</span>
+        <span class="horario-detalle">Escuela Dominical</span>
+        <span class="horario-hora">10:00 am</span>
+      </div>
+      <div class="horario-fila">
+        <span class="horario-dia">Domingo</span>
+        <span class="horario-detalle">Servicio de adoración</span>
+        <span class="horario-hora">5:00 pm</span>
+      </div>
+      <div class="horario-fila">
+        <span class="horario-dia">Lunes</span>
+        <span class="horario-detalle">Oración</span>
+        <span class="horario-hora">6:30 pm</span>
+      </div>
+      <div class="horario-fila">
+        <span class="horario-dia">Martes</span>
+        <span class="horario-detalle">Servicio de Oración</span>
+        <span class="horario-hora">7:00 pm</span>
+      </div>
+      <div class="horario-fila">
+        <span class="horario-dia">Miércoles</span>
+        <span class="horario-detalle">Servicio de Damas / Servicio de Caballeros</span>
+        <span class="horario-hora">6:30 pm</span>
+      </div>
+      <div class="horario-fila">
+        <span class="horario-dia">Jueves</span>
+        <span class="horario-detalle">Servicio de Adoración</span>
+        <span class="horario-hora">6:30 pm</span>
+      </div>
+      <div class="horario-fila">
+        <span class="horario-dia">Sábado</span>
+        <span class="horario-detalle">Servicio de Adolecentes</span>
+        <span class="horario-hora">4:00 pm</span>
+      </div>
+      <div class="horario-fila">
+        <span class="horario-dia">Sábado</span>
+        <span class="horario-detalle">Servicio de Jóvenes</span>
+        <span class="horario-hora">6:00 pm</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CONTACTO ======================= -->
+<section id="contacto" class="seccion contacto">
+  <div class="contenedor contacto__grid">
+    <div class="reveal">
+      <p class="eyebrow">Contacto</p>
+      <h2>Te esperamos</h2>
+      <p class="contacto__texto">
+        Escríbenos o visítanos, nos encantará conocerte.
+      </p>
+      <ul class="contacto__lista">
+        <!-- TODO: reemplazar por datos reales -->
+        <li><strong>Dirección:</strong> Calle Principal 123, Ciudad</li>
+        <li><strong>Teléfono:</strong> (000) 000-0000</li>
+        <li><strong>Correo:</strong> contacto@iglesia.org</li>
+      </ul>
+    </div>
+    <form class="contacto__form reveal" id="formContacto">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+      <button type="submit" class="btn btn--primary">Enviar mensaje</button>
+      <p class="contacto__nota" id="formNota" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="pie">
+  <p>&copy; <span id="anio"></span> Iglesia Bautista Vida Renacer. Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
