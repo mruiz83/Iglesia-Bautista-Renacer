@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+ 
 <!-- ======================= BANNER / VENTANAS DE NAVEGACIÓN ======================= -->
 <header class="banner" id="banner">
   <div class="banner__inner">
@@ -20,13 +20,13 @@
         Iglesia Bautista <em>Renacer</em>
       </span>
     </a>
-
+ 
     <button class="banner__toggle" id="menuToggle" aria-expanded="false" aria-controls="ventanasNav" aria-label="Abrir menú">
       <span class="banner__toggle-line"></span>
       <span class="banner__toggle-line"></span>
       <span class="banner__toggle-line"></span>
     </button>
-
+ 
     <nav class="ventanas" id="ventanasNav">
       <a href="#inicio" class="ventana">Inicio</a>
       <a href="#nosotros" class="ventana">Nosotros</a>
@@ -36,7 +36,7 @@
     </nav>
   </div>
 </header>
-
+ 
 <!-- ======================= INICIO ======================= -->
 <section id="inicio" class="seccion hero">
   <!-- TODO: reemplazar esta marca de agua por una foto real de la congregación/templo:
@@ -60,7 +60,7 @@
   </div>
   <div class="divisor"><span>✚</span></div>
 </section>
-
+ 
 <!-- ======================= NOSOTROS ======================= -->
 <section id="nosotros" class="seccion nosotros">
   <div class="contenedor nosotros__grid">
@@ -94,9 +94,9 @@
     </div>
   </div>
 </section>
-
+ 
 <div class="divisor"><span>✚</span></div>
-
+ 
 <!-- ======================= MINISTERIOS ======================= -->
 <section id="ministerios" class="seccion ministerios">
   <div class="contenedor">
@@ -127,9 +127,9 @@
     </div>
   </div>
 </section>
-
+ 
 <div class="divisor"><span>✚</span></div>
-
+ 
 <!-- ======================= HORARIOS ======================= -->
 <section id="horarios" class="seccion horarios">
   <div class="contenedor">
@@ -180,7 +180,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ======================= CONTACTO ======================= -->
 <section id="contacto" class="seccion contacto">
   <div class="contenedor contacto__grid">
@@ -197,26 +197,26 @@
         <li><strong>Correo:</strong> miguelruizobando@gmail.com</li>
       </ul>
     </div>
-    <form class="contacto__form reveal" id="formContacto">
+    <form class="contacto__form reveal" id="formContacto" action="https://formspree.io/f/mwlperoz" method="POST">
       <label for="nombre">Nombre</label>
       <input type="text" id="nombre" name="nombre" required>
-
+ 
       <label for="email">Correo electrónico</label>
       <input type="email" id="email" name="email" required>
-
+ 
       <label for="mensaje">Mensaje</label>
       <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
+ 
       <button type="submit" class="btn btn--primary">Enviar mensaje</button>
       <p class="contacto__nota" id="formNota" role="status"></p>
     </form>
   </div>
 </section>
-
+ 
 <footer class="pie">
-  <p>&copy; <span id="anio"></span> Iglesia Bautista Vida Renacer. Todos los derechos reservados.</p>
+  <p>&copy; <span id="anio"></span> Iglesia Bautista Renacer. Todos los derechos reservados.</p>
 </footer>
-
+ 
 <script src="script.js"></script>
 </body>
 </html>
