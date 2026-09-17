@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,7 +11,7 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+ 
 <!-- ======================= BANNER / VENTANAS DE NAVEGACIÓN ======================= -->
 <header class="banner" id="banner">
   <div class="banner__inner">
@@ -20,13 +21,13 @@
         Iglesia Bautista <em>Renacer</em>
       </span>
     </a>
-
+ 
     <button class="banner__toggle" id="menuToggle" aria-expanded="false" aria-controls="ventanasNav" aria-label="Abrir menú">
       <span class="banner__toggle-line"></span>
       <span class="banner__toggle-line"></span>
       <span class="banner__toggle-line"></span>
     </button>
-
+ 
     <nav class="ventanas" id="ventanasNav">
       <a href="#inicio" class="ventana">Inicio</a>
       <a href="#nosotros" class="ventana">Nosotros</a>
@@ -41,7 +42,7 @@
     </nav>
   </div>
 </header>
-
+ 
 <!-- ======================= INICIO ======================= -->
 <section id="inicio" class="seccion hero">
   <!-- El fondo de este banner usa images/logo.jpg (ver .hero__watermark en styles.css).
@@ -61,7 +62,7 @@
   </div>
   <div class="divisor"><span>✚</span></div>
 </section>
-
+ 
 <!-- ======================= NOSOTROS ======================= -->
 <section id="nosotros" class="seccion nosotros">
   <div class="contenedor nosotros__grid">
@@ -94,30 +95,50 @@
       <div class="placeholder-img" data-label="Foto del templo / pastor"></div>
     </div>
   </div>
-
-  <!-- Muro de Facebook (Page Plugin oficial). Si cambias el enlace de la página,
-       actualiza el valor después de "href=" en el src del iframe (debe ir codificado como URL). -->
-  <div class="nosotros__fb reveal">
-    <p class="eyebrow eyebrow--centro">Síguenos</p>
-    <h3 class="titulo-centro">Nuestra página de Facebook</h3>
-    <div class="fb-embed">
-      <iframe
-        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fp%2FIglesia-Bautista-Renacer-BIMI-100064568897109%2F&tabs=timeline&width=500&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"
-        width="500" height="700"
-        style="border:none;overflow:hidden"
-        scrolling="no"
-        frameborder="0"
-        allowfullscreen="true"
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-        loading="lazy"
-        title="Muro de Facebook de Iglesia Bautista Renacer">
-      </iframe>
+ 
+  <!-- Muro de Facebook (Page Plugin oficial) + Galería de fotos, uno al lado del otro.
+       Si cambias el enlace de la página, actualiza el valor después de "href=" en el
+       src del iframe (debe ir codificado como URL). Para la galería, reemplaza cada
+       placeholder-img por una <img> real cuando tengas las fotos. -->
+  <div class="nosotros__extra reveal">
+    <div class="nosotros__extra-grid">
+      <div class="nosotros__fb">
+        <p class="eyebrow">Síguenos</p>
+        <h3>Nuestra página de Facebook</h3>
+        <div class="fb-embed">
+          <iframe
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fp%2FIglesia-Bautista-Renacer-BIMI-100064568897109%2F&tabs=timeline&width=500&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"
+            width="500" height="700"
+            style="border:none;overflow:hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            loading="lazy"
+            title="Muro de Facebook de Iglesia Bautista Renacer">
+          </iframe>
+        </div>
+      </div>
+ 
+      <div class="nosotros__galeria">
+        <p class="eyebrow">Galería</p>
+        <h3>Momentos de nuestra comunidad</h3>
+        <div class="galeria__grid">
+          <!-- TODO: reemplaza cada div por <img src="images/foto1.jpg" alt="..."> cuando tengas las fotos -->
+          <div class="placeholder-img placeholder-img--sq" data-label="Foto 1"></div>
+          <div class="placeholder-img placeholder-img--sq" data-label="Foto 2"></div>
+          <div class="placeholder-img placeholder-img--sq" data-label="Foto 3"></div>
+          <div class="placeholder-img placeholder-img--sq" data-label="Foto 4"></div>
+          <div class="placeholder-img placeholder-img--sq" data-label="Foto 5"></div>
+          <div class="placeholder-img placeholder-img--sq" data-label="Foto 6"></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
+ 
 <div class="divisor"><span>✚</span></div>
-
+ 
 <!-- ======================= MINISTERIOS ======================= -->
 <section id="ministerios" class="seccion ministerios">
   <div class="contenedor">
@@ -148,9 +169,9 @@
     </div>
   </div>
 </section>
-
+ 
 <div class="divisor"><span>✚</span></div>
-
+ 
 <!-- ======================= HORARIOS ======================= -->
 <section id="horarios" class="seccion horarios">
   <div class="contenedor">
@@ -201,7 +222,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ======================= CONTACTO ======================= -->
 <section id="contacto" class="seccion contacto">
   <div class="contenedor contacto__grid">
@@ -221,23 +242,23 @@
     <form class="contacto__form reveal" id="formContacto" action="https://formspree.io/f/mwlperoz" method="POST">
       <label for="nombre">Nombre</label>
       <input type="text" id="nombre" name="nombre" required>
-
+ 
       <label for="email">Correo electrónico</label>
       <input type="email" id="email" name="email" required>
-
+ 
       <label for="mensaje">Mensaje</label>
       <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
+ 
       <button type="submit" class="btn btn--primary">Enviar mensaje</button>
       <p class="contacto__nota" id="formNota" role="status"></p>
     </form>
   </div>
 </section>
-
+ 
 <footer class="pie">
   <p>&copy; <span id="anio"></span> Iglesia Bautista Renacer. Todos los derechos reservados.</p>
 </footer>
-
+ 
 <script src="script.js"></script>
 </body>
 </html>
