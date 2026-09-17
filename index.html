@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+ 
 <!-- ======================= BANNER / VENTANAS DE NAVEGACIÓN ======================= -->
 <header class="banner" id="banner">
   <div class="banner__inner">
@@ -20,23 +20,28 @@
         Iglesia Bautista <em>Renacer</em>
       </span>
     </a>
-
+ 
     <button class="banner__toggle" id="menuToggle" aria-expanded="false" aria-controls="ventanasNav" aria-label="Abrir menú">
       <span class="banner__toggle-line"></span>
       <span class="banner__toggle-line"></span>
       <span class="banner__toggle-line"></span>
     </button>
-
+ 
     <nav class="ventanas" id="ventanasNav">
       <a href="#inicio" class="ventana">Inicio</a>
       <a href="#nosotros" class="ventana">Nosotros</a>
       <a href="#ministerios" class="ventana">Ministerios</a>
       <a href="#horarios" class="ventana">Horarios</a>
       <a href="#contacto" class="ventana ventana--cta">Contacto</a>
+      <a href="https://www.facebook.com/p/Iglesia-Bautista-Renacer-BIMI-100064568897109/" class="ventana ventana--social" target="_blank" rel="noopener noreferrer" aria-label="Visitar la página de Facebook de la iglesia">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+          <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94Z"></path>
+        </svg>
+      </a>
     </nav>
   </div>
 </header>
-
+ 
 <!-- ======================= INICIO ======================= -->
 <section id="inicio" class="seccion hero">
   <!-- El fondo de este banner usa images/logo.jpg (ver .hero__watermark en styles.css).
@@ -56,7 +61,7 @@
   </div>
   <div class="divisor"><span>✚</span></div>
 </section>
-
+ 
 <!-- ======================= NOSOTROS ======================= -->
 <section id="nosotros" class="seccion nosotros">
   <div class="contenedor nosotros__grid">
@@ -90,9 +95,9 @@
     </div>
   </div>
 </section>
-
+ 
 <div class="divisor"><span>✚</span></div>
-
+ 
 <!-- ======================= MINISTERIOS ======================= -->
 <section id="ministerios" class="seccion ministerios">
   <div class="contenedor">
@@ -123,9 +128,9 @@
     </div>
   </div>
 </section>
-
+ 
 <div class="divisor"><span>✚</span></div>
-
+ 
 <!-- ======================= HORARIOS ======================= -->
 <section id="horarios" class="seccion horarios">
   <div class="contenedor">
@@ -176,7 +181,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- ======================= CONTACTO ======================= -->
 <section id="contacto" class="seccion contacto">
   <div class="contenedor contacto__grid">
@@ -196,23 +201,23 @@
     <form class="contacto__form reveal" id="formContacto" action="https://formspree.io/f/mwlperoz" method="POST">
       <label for="nombre">Nombre</label>
       <input type="text" id="nombre" name="nombre" required>
-
+ 
       <label for="email">Correo electrónico</label>
       <input type="email" id="email" name="email" required>
-
+ 
       <label for="mensaje">Mensaje</label>
       <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
+ 
       <button type="submit" class="btn btn--primary">Enviar mensaje</button>
       <p class="contacto__nota" id="formNota" role="status"></p>
     </form>
   </div>
 </section>
-
+ 
 <footer class="pie">
   <p>&copy; <span id="anio"></span> Iglesia Bautista Renacer. Todos los derechos reservados.</p>
 </footer>
-
+ 
 <script src="script.js"></script>
 </body>
 </html>
